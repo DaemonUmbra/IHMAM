@@ -1,0 +1,12 @@
+[
+{
+  "modid": "ihmam",
+  "name": "I helped making a mistake",
+  "description": "IHMAM is a helper mod for What Have I Done?. Adding tiered items.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/rlnt/ihmam",
+  "authorList": ["Chronophylos"],
+  "dependencies": []
+}
+]
