@@ -11,10 +11,10 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
 
 @Mod(
-        modid = Reference.MOD_ID,
-        name = Reference.MOD_NAME,
-        version = Reference.MOD_VERSION,
-        acceptedMinecraftVersions = Reference.MC_VERSION
+        modid = Reference.MODID,
+        name = Reference.NAME,
+        version = Reference.VERSION,
+        acceptedMinecraftVersions = Reference.MCVERSION
 )
 public class IHMAM {
 

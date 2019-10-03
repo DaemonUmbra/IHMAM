@@ -2,10 +2,10 @@ package com.rlnt.ihmam.util;
 
 public class Reference {
     // Basic Information
-    public static final String MOD_ID = "ihmam";
-    public static final String MOD_NAME = "I helped making a mistake";
-    public static final String MOD_VERSION = "@VERSION@";
-    public static final String MC_VERSION = "[@MCVERSION@]";
+    public static final String MODID = "ihmam";
+    public static final String NAME = "I helped making a mistake";
+    public static final String VERSION = "0.0.1";
+    public static final String MCVERSION = "[1.12.2]";
 
     // Proxies
     public static final String CLIENT = "com.rlnt.ihmam.proxy.ClientProxy";

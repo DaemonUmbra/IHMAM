@@ -1,6 +1,6 @@
 [{
-  "modid": "ihmam",
-  "name": "I helped making a mistake",
+  "modid": "${modid}",
+  "name": "${name}",
   "description": "IHMAM is a helper mod for the >Whoops, what have I done?< modpack.",
   "version": "${version}",
   "mcversion": "${mcversion}",
