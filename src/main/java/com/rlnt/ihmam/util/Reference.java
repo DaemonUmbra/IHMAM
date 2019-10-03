@@ -8,6 +8,6 @@ public class Reference {
     public static final String MC_VERSION = "[@MCVERSION@]";
 
     // Proxies
-    public static final String CLIENT = "com.rlnt.ihmam.proxy.client.ClientProxy";
-    public static final String SERVER = "com.rlnt.ihmam.proxy.common.CommonProxy";
+    public static final String CLIENT = "com.rlnt.ihmam.proxy.ClientProxy";
+    public static final String SERVER = "com.rlnt.ihmam.proxy.CommonProxy";
 }
