@@ -1,6 +1,5 @@
 package com.rlnt.ihmam.util.handlers;
 
-import com.rlnt.ihmam.IHMAM;
 import com.rlnt.ihmam.init.ModItems;
 import com.rlnt.ihmam.util.interfaces.IHasModel;
 import net.minecraft.item.Item;
