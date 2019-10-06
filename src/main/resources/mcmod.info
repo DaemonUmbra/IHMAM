@@ -1,10 +1,11 @@
 [{
-  "modid": "${modid}",
-  "name": "${name}",
+  "modid": "ihmam",
+  "name": "I helped making a mistake",
   "description": "IHMAM is a helper mod for the >Whoops, what have I done?< modpack.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "https://github.com/rlnt/ihmam",
-  "authorList": ["Chronophylos, Relentless"],
+  "authorList": ["Relentless, Chronophylos"],
+  "credits": "RLNT",
   "dependencies": []
 }]

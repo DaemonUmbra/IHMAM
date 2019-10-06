@@ -1,13 +1,17 @@
 package com.rlnt.ihmam;
 
-import com.rlnt.ihmam.proxy.CommonProxy;
+import com.rlnt.ihmam.proxy.IProxy;
+import com.rlnt.ihmam.tabs.ModTab;
 import com.rlnt.ihmam.util.Reference;
-import net.minecraftforge.common.config.Configuration;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.Instance;
+import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartedEvent;
 import org.apache.logging.log4j.Logger;
 
 @Mod(
@@ -19,32 +23,36 @@ import org.apache.logging.log4j.Logger;
 public class IHMAM {
 
     // Instance
-    @Mod.Instance
+    @Instance(Reference.MODID)
     public static IHMAM instance;
 
-    // Proxy
+    // Proxies
     @SidedProxy(clientSide = Reference.CLIENT, serverSide = Reference.SERVER)
-    public static CommonProxy proxy;
+    public static IProxy proxy;
 
-    // Config and Logger
+    // Logger
     public static Logger logger;
-    public static Configuration config;
 
-    // Pre Initialization
-    @Mod.EventHandler
-    public static void PreInit(FMLPreInitializationEvent event) {
+    // Creative Tab
+    public static final CreativeTabs IHMAM_TAB = new ModTab("tabIHMAM");
 
+    // Pre Init
+    @EventHandler
+    public static void preInit(FMLPreInitializationEvent event) {
     }
 
-    // Initialization
-    @Mod.EventHandler
+    // Init
+    @EventHandler
     public static void init(FMLInitializationEvent event) {
-
     }
 
-    // Post Initialization
-    @Mod.EventHandler
-    public static  void PostInit(FMLPostInitializationEvent event) {
+    // Post Init
+    @EventHandler
+    public static void postInit(FMLPostInitializationEvent event) {
+    }
 
+    // Server Init
+    @EventHandler
+    public static void serverInit(FMLServerStartedEvent event) {
     }
 }
