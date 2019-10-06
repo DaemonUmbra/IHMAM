@@ -1,4 +1,5 @@
-[{
+[
+{
   "modid": "ihmam",
   "name": "I helped making a mistake",
   "description": "IHMAM is a helper mod for the >Whoops, what have I done?< modpack.",
@@ -8,4 +9,5 @@
   "authorList": ["Relentless, Chronophylos"],
   "credits": "RLNT",
   "dependencies": []
-}]
+}
+]

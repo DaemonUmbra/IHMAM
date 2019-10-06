@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ihmam:items/bad_crafting_component_2"
+  }
+}

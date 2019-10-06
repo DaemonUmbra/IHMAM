@@ -16,6 +16,6 @@ public class ModTab extends CreativeTabs {
     @SideOnly(Side.CLIENT)
     @Override
     public ItemStack createIcon() {
-        return new ItemStack(ModItems.CRAFTING_COMPONENT);
+        return new ItemStack(ModItems.RUINED_CRAFTING_COMPONENT_3);
     }
 }

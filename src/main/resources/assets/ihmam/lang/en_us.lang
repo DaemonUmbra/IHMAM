@@ -1,3 +1,24 @@
+// Creative Tab
 itemGroup.ihmam.tabIHMAM=I helped making a mistake
 
-item.itemCraftingComponent.name=Crafting Component
+// Crafting Components
+// Basic
+item.itemBasicCraftingComponent1.name=Basic Crafting Component Tier 1
+item.itemBasicCraftingComponent2.name=Basic Crafting Component Tier 2
+item.itemBasicCraftingComponent3.name=Basic Crafting Component Tier 3
+// Bad
+item.itemBadCraftingComponent1.name=Bad Crafting Component Tier 1
+item.itemBadCraftingComponent2.name=Bad Crafting Component Tier 2
+item.itemBadCraftingComponent3.name=Bad Crafting Component Tier 3
+// Worse
+item.itemWorseCraftingComponent1.name=Worse Crafting Component Tier 1
+item.itemWorseCraftingComponent2.name=Worse Crafting Component Tier 2
+item.itemWorseCraftingComponent3.name=Worse Crafting Component Tier 3
+// Miserable
+item.itemMiserableCraftingComponent1.name=Miserable Crafting Component Tier 1
+item.itemMiserableCraftingComponent2.name=Miserable Crafting Component Tier 2
+item.itemMiserableCraftingComponent3.name=Miserable Crafting Component Tier 3
+// Ruined
+item.itemRuinedCraftingComponent1.name=Ruined Crafting Component Tier 1
+item.itemRuinedCraftingComponent2.name=Ruined Crafting Component Tier 2
+item.itemRuinedCraftingComponent3.name=Ruined Crafting Component Tier 3
