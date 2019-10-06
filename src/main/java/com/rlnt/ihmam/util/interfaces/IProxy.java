@@ -1,4 +1,4 @@
-package com.rlnt.ihmam.proxy;
+package com.rlnt.ihmam.util.interfaces;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;

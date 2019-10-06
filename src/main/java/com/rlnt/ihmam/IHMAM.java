@@ -1,6 +1,6 @@
 package com.rlnt.ihmam;
 
-import com.rlnt.ihmam.proxy.IProxy;
+import com.rlnt.ihmam.util.interfaces.IProxy;
 import com.rlnt.ihmam.tabs.ModTab;
 import com.rlnt.ihmam.util.Reference;
 import net.minecraft.creativetab.CreativeTabs;
