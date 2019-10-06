@@ -1,5 +1,6 @@
 package com.rlnt.ihmam;
 
+import com.rlnt.ihmam.util.handlers.RegistryHandler;
 import com.rlnt.ihmam.util.interfaces.IProxy;
 import com.rlnt.ihmam.tabs.ModTab;
 import com.rlnt.ihmam.util.Reference;
@@ -23,7 +24,7 @@ import org.apache.logging.log4j.Logger;
 public class IHMAM {
 
     // Instance
-    @Instance(Reference.MODID)
+    @Instance
     public static IHMAM instance;
 
     // Proxies
@@ -39,20 +40,25 @@ public class IHMAM {
     // Pre Init
     @EventHandler
     public static void preInit(FMLPreInitializationEvent event) {
+        logger = event.getModLog();
+        RegistryHandler.preInitRegistry(event);
     }
 
     // Init
     @EventHandler
     public static void init(FMLInitializationEvent event) {
+        RegistryHandler.initRegistry(event);
     }
 
     // Post Init
     @EventHandler
     public static void postInit(FMLPostInitializationEvent event) {
+        RegistryHandler.postInitRegistry(event);
     }
 
     // Server Init
     @EventHandler
     public static void serverInit(FMLServerStartedEvent event) {
+        RegistryHandler.serverInitRegistry(event);
     }
 }
