@@ -19,4 +19,7 @@ public class CommonProxy implements IProxy {
 
     @Override
     public void registerItemRenderer(Item item, int meta, String id) {}
+
+    @Override
+    public void registerModel(Item item, int meta) {}
 }
