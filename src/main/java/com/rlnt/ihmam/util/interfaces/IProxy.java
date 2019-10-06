@@ -11,5 +11,4 @@ public interface IProxy {
     public void postInit(FMLPostInitializationEvent event);
 
     public void registerItemRenderer(Item item, int meta, String id);
-    public void registerModel(Item item, int meta);
 }

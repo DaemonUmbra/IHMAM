@@ -8,6 +8,8 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
+import java.util.Objects;
+
 public class ClientProxy implements IProxy {
 
     @Override
@@ -21,11 +23,6 @@ public class ClientProxy implements IProxy {
 
     @Override
     public void registerItemRenderer(Item item, int meta, String id) {
-        ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(item.getRegistryName(), id));
-    }
-
-    @Override
-    public void registerModel(Item item, int meta) {
-        ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(item.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(Objects.requireNonNull(item.getRegistryName()), id));
     }
 }
