@@ -8,14 +8,16 @@ buildscript {
     }
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
-//Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
-
 
 version = "${minecraft_version}-${mod_version}"
-group = "com.rlnt.ihmam" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "IHMAM"
+group = "com.rlnt.ihmam"
+archivesBaseName = "ihmam"
 
-sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8 // Need this here so eclipse task generates correctly.
+sourceCompatibility = targetCompatibility = '1.8'
+
+compileJava {
+    sourceCompatibility = targetCompatibility = '1.8'
+}
 
 minecraft {
     version = "${minecraft_version}-${forge_version}"
@@ -23,7 +25,6 @@ minecraft {
     runDir = "run"
 
     replace "@VERSION@", project.version
-    replace "@MCVERSION@", project.minecraft.version
     replaceIn "IHMAM.java"
 }
 
@@ -38,15 +39,13 @@ processResources {
     // replace stuff in mcmod.info, nothing else
     from(sourceSets.main.resources.srcDirs) {
         include 'mcmod.info'
-
+                
         // replace version and mcversion
         expand 'version':project.version, 'mcversion':project.minecraft.version
     }
-
+        
     // copy everything else except the mcmod.info
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
     }
 }
-
-// vim: set foldmarker={,} foldlevel=0 foldmethod=marker:
