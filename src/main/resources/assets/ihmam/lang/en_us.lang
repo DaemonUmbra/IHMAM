@@ -1,6 +1,7 @@
 // Creative Tab
 itemGroup.ihmam.tabIHMAM=I helped making a mistake
 
+/*  Items  */
 // Crafting Components
 // Basic
 item.itemBasicCraftingComponent1.name=Basic Crafting Component Tier 1
@@ -22,3 +23,14 @@ item.itemMiserableCraftingComponent3.name=Miserable Crafting Component Tier 3
 item.itemRuinedCraftingComponent1.name=Ruined Crafting Component Tier 1
 item.itemRuinedCraftingComponent2.name=Ruined Crafting Component Tier 2
 item.itemRuinedCraftingComponent3.name=Ruined Crafting Component Tier 3
+
+// Fluid Components
+item.itemFluidComponent1.name=Fluid Component Tier 1
+item.itemFluidComponent2.name=Fluid Component Tier 2
+item.itemFluidComponent3.name=Fluid Component Tier 3
+
+
+/*  Fluid  */
+// Crafting Essence
+fluid.fluidCraftingEssence=Crafting Essence
+tile.blockCraftingEssence.name=Crafting Essence
