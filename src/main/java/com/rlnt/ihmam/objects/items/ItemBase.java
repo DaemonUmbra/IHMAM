@@ -17,6 +17,6 @@ public class ItemBase extends Item implements IHasModel {
 
     @Override
     public void registerModels() {
-        IHMAM.proxy.registerItemRenderer(this, 0, "inventory");
+        IHMAM.proxy.registerModel(this, 0);
     }
 }
