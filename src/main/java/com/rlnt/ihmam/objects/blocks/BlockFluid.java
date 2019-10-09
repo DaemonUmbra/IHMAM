@@ -14,7 +14,7 @@ public class BlockFluid extends BlockFluidClassic {
 
     public BlockFluid(String unlocalizedName, String registryName, Fluid fluid, Material material) {
         super(fluid, material);
-        setTranslationKey(unlocalizedName);
+        setUnlocalizedName(unlocalizedName);
         setRegistryName(registryName);
 
         ModBlocks.BLOCKS.add(this);

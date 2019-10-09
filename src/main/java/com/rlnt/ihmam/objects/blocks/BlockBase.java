@@ -13,7 +13,7 @@ public class BlockBase extends Block implements IHasModel {
 
     public BlockBase(String unlocalizedName, String registryName, Material material) {
         super(material);
-        setTranslationKey(unlocalizedName);
+        setUnlocalizedName(unlocalizedName);
         setRegistryName(registryName);
         setCreativeTab(IHMAM.IHMAM_TAB);
 
