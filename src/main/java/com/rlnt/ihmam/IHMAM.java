@@ -3,7 +3,6 @@ package com.rlnt.ihmam;
 import com.rlnt.ihmam.util.handlers.RegistryHandler;
 import com.rlnt.ihmam.util.interfaces.IProxy;
 import com.rlnt.ihmam.tabs.ModTab;
-import com.rlnt.ihmam.util.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.Configuration;
@@ -15,22 +14,30 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @Mod(
-        modid = Reference.MODID,
-        name = Reference.NAME,
-        version = Reference.VERSION,
-        acceptedMinecraftVersions = Reference.MCVERSION
+        modid = IHMAM.MOD_ID,
+        name = IHMAM.MOD_NAME,
+        version = IHMAM.VERSION,
+        acceptedMinecraftVersions = IHMAM.MC_VERSION
 )
 @Mod.EventBusSubscriber()
 public class IHMAM {
-    @Mod.Instance(Reference.MODID)
+    public static final String MOD_ID = "ihmam";
+    public static final String MOD_NAME = "I helped making a mistake";
+    public static final String VERSION = "%VERSION%";
+    public static final String MC_VERSION = "[1.12.2]";
+
+    public static final String CLIENT = "com.rlnt.ihmam.proxy.ClientProxy";
+    public static final String SERVER = "com.rlnt.ihmam.proxy.CommonProxy";
+
+    @Mod.Instance(MOD_ID)
     public static IHMAM INSTANCE;
 
-    public static final Logger LOGGER = LogManager.getLogger(Reference.NAME);
+    public static final Logger LOGGER = LogManager.getLogger(MOD_NAME);
 
     public static Configuration CONFIG;
 
     // Proxies
-    @SidedProxy(clientSide = Reference.CLIENT, serverSide = Reference.SERVER)
+    @SidedProxy(clientSide = CLIENT, serverSide = SERVER)
     public static IProxy proxy;
 
     // Creative Tab
@@ -46,7 +53,7 @@ public class IHMAM {
         RegistryHandler.preInitRegistries(event);
     }
 
-    @Config(modid = Reference.MODID)
+    @Config(modid = MOD_ID)
     public static class cfg {
 
     }

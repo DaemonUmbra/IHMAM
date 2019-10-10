@@ -46,7 +46,7 @@ minecraft {
         serverJvmArgs = [core_plugin_compressed]
     }
 
-    replaceIn "Reference.java"
+    replaceIn "${mod_name}.java"
     replaceIn "mcmod.info"
 
     replace "%VERSION%", project.mod_version
