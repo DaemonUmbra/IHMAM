@@ -1,8 +1,8 @@
-package com.rlnt.ihmam.objects.blocks;
+package com.rlnt.ihmam.common.block;
 
 import com.rlnt.ihmam.IHMAM;
-import com.rlnt.ihmam.init.ModBlocks;
-import com.rlnt.ihmam.init.ModItems;
+import com.rlnt.ihmam.common.block.ModBlocks;
+import com.rlnt.ihmam.common.item.ModItems;
 import com.rlnt.ihmam.util.interfaces.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

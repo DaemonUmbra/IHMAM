@@ -1,6 +1,5 @@
-package com.rlnt.ihmam.init;
+package com.rlnt.ihmam.common.block;
 
-import com.rlnt.ihmam.objects.blocks.BlockFluid;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 

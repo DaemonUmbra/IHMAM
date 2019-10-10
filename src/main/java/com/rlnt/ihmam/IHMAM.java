@@ -1,7 +1,7 @@
 package com.rlnt.ihmam;
 
+import com.rlnt.ihmam.common.CommonProxy;
 import com.rlnt.ihmam.util.handlers.RegistryHandler;
-import com.rlnt.ihmam.util.interfaces.IProxy;
 import com.rlnt.ihmam.tabs.ModTab;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.config.Config;
@@ -26,8 +26,8 @@ public class IHMAM {
     public static final String VERSION = "%VERSION%";
     public static final String MC_VERSION = "[1.12.2]";
 
-    public static final String CLIENT = "com.rlnt.ihmam.proxy.ClientProxy";
-    public static final String SERVER = "com.rlnt.ihmam.proxy.CommonProxy";
+    public static final String CLIENT = "com.rlnt.ihmam.client.ClientProxy";
+    public static final String SERVER = "com.rlnt.ihmam.common.CommonProxy";
 
     @Mod.Instance(MOD_ID)
     public static IHMAM INSTANCE;
@@ -38,7 +38,7 @@ public class IHMAM {
 
     // Proxies
     @SidedProxy(clientSide = CLIENT, serverSide = SERVER)
-    public static IProxy proxy;
+    public static CommonProxy proxy;
 
     // Creative Tab
     public static final CreativeTabs IHMAM_TAB = new ModTab("tabIHMAM");

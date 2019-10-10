@@ -1,6 +1,5 @@
-package com.rlnt.ihmam.init;
+package com.rlnt.ihmam.common.item;
 
-import com.rlnt.ihmam.objects.items.ItemBase;
 import net.minecraft.item.Item;
 
 import java.util.ArrayList;
@@ -9,7 +8,7 @@ import java.util.List;
 public class ModItems {
 
     // Item List
-    public static final List<Item> ITEMS = new ArrayList<Item>();
+    public static final List<Item> ITEMS = new ArrayList<>();
 
     /*  Items  */
     // Crafting Components

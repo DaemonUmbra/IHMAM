@@ -1,8 +1,8 @@
 package com.rlnt.ihmam.util.handlers;
 
-import com.rlnt.ihmam.init.ModBlocks;
-import com.rlnt.ihmam.init.ModFluids;
-import com.rlnt.ihmam.init.ModItems;
+import com.rlnt.ihmam.common.block.ModBlocks;
+import com.rlnt.ihmam.common.block.ModFluids;
+import com.rlnt.ihmam.common.item.ModItems;
 import com.rlnt.ihmam.util.interfaces.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;

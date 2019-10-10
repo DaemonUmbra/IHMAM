@@ -1,15 +1,12 @@
 package com.rlnt.ihmam.tabs;
 
-import com.rlnt.ihmam.init.ModBlocks;
-import com.rlnt.ihmam.init.ModFluids;
-import com.rlnt.ihmam.init.ModItems;
-import com.rlnt.ihmam.util.Reference;
+import com.rlnt.ihmam.IHMAM;
+import com.rlnt.ihmam.common.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
-import net.minecraftforge.fluids.UniversalBucket;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -19,7 +16,7 @@ public class ModTab extends CreativeTabs {
 
     // Set Tab Name
     public ModTab(String name) {
-        super(Reference.MODID + "." + name);
+        super(IHMAM.MOD_ID + "." + name);
     }
 
     // Fill Tab

@@ -1,6 +1,6 @@
 package com.rlnt.ihmam.util.handlers;
 
-import com.rlnt.ihmam.init.ModBlocks;
+import com.rlnt.ihmam.common.block.ModBlocks;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.ItemMeshDefinition;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
